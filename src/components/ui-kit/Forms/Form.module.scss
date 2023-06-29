@@ -1,0 +1,51 @@
+@import "./../../../assets/const.scss";
+
+.form_title {
+  margin: $form_title-margin;
+}
+
+.label_wrapper:last-of-type {
+  margin: 0 0 30px;
+}
+
+.error_name {
+  color: $errored-color;
+  font-size: $error-font-size;
+  margin: 5px 0 0 0;
+  text-align: start;
+}
+
+.error_field {
+  display: flex;
+  box-sizing: content-box;
+  //padding: 16px 0px;
+  font-size: $error_field_font_size;
+  line-height: $error_field_line_height;
+  text-align: center;
+  font-weight: $error_field_font_weight;
+  color: $error-msg;
+  //background-color: $error-msg;
+  border-radius: $error_field_border_radius;
+  margin-bottom: 15px;
+  text-align: left;
+  column-gap: 10px;
+}
+
+.error_field_grid {
+  text-align: left;
+  @extend .error_field;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  @media only screen and (max-width: $breakpoint-mobile) {
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+.alert{
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../assets/icons/alert.svg);
+}

@@ -1,0 +1,43 @@
+@import "@/assets/const.scss";
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 37px;
+  gap: 16px 150px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $secondary-bg-color;
+  border-radius: 8px;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding: 4%;
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+  order: 2;
+}
+
+.admin_h3 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 35px;
+  order: 3;
+}
+
+.error {
+  color: $errored-color;
+  order: 1;
+}

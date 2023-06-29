@@ -1,0 +1,15 @@
+@import "@/assets/const.scss";
+
+.label_checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin: $label_checkbox-margin;
+  width: 100%;
+}
+
+.form_subtitle_checkbox {
+  color: $base-font-color;
+  margin: 0;
+}

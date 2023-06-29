@@ -1,0 +1,56 @@
+@import "../../assets/const.scss";
+
+.container {
+  max-width: 100%;
+  //min-height: 100vh;
+  //padding: 4vh 4vw 0 4vw;
+  text-align: center;
+  color: $base-font-color;
+  background-color: $primary-bg-color;
+  margin: 0 auto;
+}
+
+.card_mini {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 45px 80px;
+  width: 100%;
+  display: flex;
+  background-color: $secondary-bg-color;
+  justify-content: flex-start;
+  column-gap: 193px;
+  box-shadow: 0px 15px 30px rgba(213, 213, 213, 0.25);
+  align-items: center;
+  /*Устанавливаем время и имя анимации*/
+  animation: showTop 1s;
+  z-index: 1;
+  .card_left {
+    .img_wrapper {
+      min-width: 100px;
+      min-height: 100px;
+      @media only screen and (max-width: $breakpoint-desktop) {
+        min-width: 60px;
+        min-height: 60px;
+      }
+    }
+  }
+
+  .card_right {
+    h3 {
+      text-align: left;
+      //max-width: 1003px;
+    }
+  }
+  @media only screen and (max-width: $breakpoint-desktop) {
+    column-gap: 100px;
+    padding: 20px 40px;
+  }
+  @media only screen and (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
+}
+
+.card_mini_hide {
+  display: none;
+}

@@ -1,0 +1,16 @@
+@import "@/assets/const.scss";
+
+.label {
+  display: block;
+  margin: $label-margin;
+  width: 100%;
+}
+
+.label_checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin: $label_checkbox-margin;
+  width: 100%;
+}

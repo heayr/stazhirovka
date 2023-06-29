@@ -1,0 +1,169 @@
+@import "../../assets/const.scss";
+
+.container {
+  max-width: 100%;
+  //min-height: 100vh;
+  //padding: 4vh 4vw 0 4vw;
+  padding: 46px 80px 0;
+  text-align: center;
+  color: $base-font-color;
+  background-color: $primary-bg-color;
+  margin: 0 auto;
+  @media only screen and (max-width: $breakpoint-desktop) {
+    padding: 25px 45px;
+  }
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding: 15px 20px;
+  }
+}
+
+.card {
+  display: flex;
+  background-color: $secondary-bg-color;
+  align-items: stretch;
+  justify-content: flex-start;
+  border-radius: 16px;
+  min-height: 780px;
+  box-shadow: 0px 15px 30px rgba(213, 213, 213, 0.25);
+  padding: 55px 70px;
+  /*Устанавливаем время и имя анимации*/
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  .card_left {
+    padding: 160px 112px;
+    .img_wrapper {
+      min-width: 200px;
+      min-height: 200px;
+      @media only screen and (max-width: $breakpoint-notebook) {
+        scale: 0.75;
+      }
+    }
+    .subtitle {
+      display: block;
+      margin: 0;
+      margin-top: 78px;
+      width: 200px;
+      @media only screen and (max-width: $breakpoint-desktop) {
+        margin-top: 40px;
+      }
+      @media only screen and (max-width: $breakpoint-notebook) {
+        margin-top: 20px;
+      }
+      @media only screen and (max-width: $breakpoint-mobile) {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+    @media only screen and (max-width: $breakpoint-desktop) {
+      padding: 100px 70px;
+    }
+    @media only screen and (max-width: $breakpoint-notebook) {
+      padding: 20px 25px;
+    }
+  }
+  .devider {
+    //height: 472px;
+    height: 672px;
+    width: 1px;
+    border-width: 0;
+    margin: 0;
+    background-color: $devider;
+    align-self: center;
+    @media only screen and (max-width: $breakpoint-desktop) {
+      height: 575px;
+    }
+    @media only screen and (max-width: $breakpoint-notebook) {
+      height: 450px;
+    }
+    @media only screen and (max-width: $breakpoint-mobile) {
+      height: 1px;
+      width: 100%;
+    }
+  }
+  .card_right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 45px 106px;
+    justify-content: space-between;
+    row-gap: 68px;
+    .main_content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 59px;
+      .tags {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        column-gap: 24px;
+        .tag {
+          border-radius: 6px;
+          padding: 4px 8px;
+          margin: 0;
+          background-color: $primary-bg-color;
+          @media only screen and (max-width: $breakpoint-mobile) {
+            padding: 10px 20px;
+          }
+        }
+        .tag:first-child {
+          background-color: $accent-bg-color;
+        }
+        @media only screen and (max-width: $breakpoint-mobile) {
+          flex-wrap: wrap;
+          row-gap: 8px;
+        }
+      }
+      .title {
+        text-align: left;
+        margin-top: 64px;
+        @media only screen and (max-width: $breakpoint-desktop) {
+          margin-top: 50px;
+        }
+        @media only screen and (max-width: $breakpoint-notebook) {
+          margin-top: 20px;
+        }
+      }
+      .salaries {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        .salary {
+          margin-right: 5px;
+          text-align: left;
+          color: $accient-font-color;
+        }
+        @media only screen and (max-width: $breakpoint-mobile) {
+          flex-wrap: wrap;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-desktop) {
+        row-gap: 30px;
+      }
+      @media only screen and (max-width: $breakpoint-mobile) {
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: $breakpoint-desktop) {
+      padding: 50px;
+    }
+    @media only screen and (max-width: $breakpoint-tablet) {
+      padding: 30px;
+    }
+    @media only screen and (max-width: $breakpoint-mobile) {
+      align-items: center;
+    }
+  }
+  @media only screen and (max-width: $breakpoint-desktop) {
+    min-height: 500px;
+    padding: 30px 40px;
+  }
+  @media only screen and (max-width: $breakpoint-notebook) {
+    min-height: 300px;
+    padding: 25px 20px;
+  }
+  @media only screen and (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
+}

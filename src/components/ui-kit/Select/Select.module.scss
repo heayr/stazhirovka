@@ -1,0 +1,78 @@
+@import "@/assets/const.scss";
+
+// !.custom_dropdown
+.custom_dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.select_container {
+  position: relative;
+
+}
+.selected {
+  text-align: left;
+  position: relative;
+  order: 0;
+  font-size: $input-font-size;
+  width: 100%;
+  line-height: $input-line-height;
+  outline: none;
+  border: transparent;
+  border-radius: $input-border-radius;
+  padding: 10px 28px;
+  background: url("../../../assets/icons/Polygon.svg") 94.5% / 3% no-repeat
+    $input-background-color;
+  &:hover {
+    cursor: pointer;
+    outline: 1px solid $input-border-color;
+  }
+}
+
+.select_container {
+  width: 100%;
+  top: 100%;
+  margin-top: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: background-image 0s linear;
+  transition: background-image 0s linear;
+  order: 1;
+  background-color: $input-background-color;
+  border-radius: $input-border-radius;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selected_visible {
+  @extend .selected;
+
+  background: url("../../../assets/icons/PolygonUp.svg") 94.5% / 3% no-repeat
+    $input-background-color;
+
+}
+
+.select {
+  width: 100%;
+  transition: all 7s linear;
+  box-sizing: border-box;
+}
+
+.options {
+  @extend .selected;
+  background-image: none;
+  border: none;
+  outline: none;
+  &:hover {
+  outline: none;
+  border: 1px solid $input-border-color;
+
+    background-color: $primary-bg-color;
+  }
+}

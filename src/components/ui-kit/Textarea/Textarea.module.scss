@@ -1,0 +1,24 @@
+@import "@/assets/const.scss";
+
+%textarea {
+  color: $base-font-color;
+  border: none;
+  border-bottom: $input-border;
+  border-radius: $textarea-border-radius;
+  padding: 10px 28px;
+  font-family: inherit;
+  line-height: $textarea-line-height;
+  width: 100%;
+  outline: none;
+  font-size: $textarea-font-size;
+  background-color: $textarea-background-color;
+}
+
+.textarea {
+  @extend %textarea;
+}
+
+.textarea_error {
+  @extend %textarea;
+  border: $border-error;
+}

@@ -1,0 +1,48 @@
+@import "../../../assets/const.scss";
+
+.loader {
+  background: #2b64f6;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  animation: rotateRct 1.4s ease-in-out infinite,
+    color-change 1.5s ease-in-out infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background: #9e9e9e;
+  }
+  33% {
+    background: #6790fb;
+  }
+  66% {
+    background: #2b64f6;
+  }
+  100% {
+    background: #f6bd2b;
+  }
+}
+
+@keyframes rotateRct {
+  0% {
+    transform: (perspective(120px) rotateX(0deg) rotateY(0deg));
+  }
+  50% {
+    transform: (perspective(120px) rotateX(-180.1deg) rotateY(0deg));
+  }
+  100% {
+    transform: (perspective(120px) rotateX(-180deg) rotateY(-179.9deg));
+  }
+}
+
+@keyframes size {
+  from {
+    width: 70px;
+    height: 70px;
+  }
+  to {
+    width: 30px;
+    height: 30px;
+  }
+}

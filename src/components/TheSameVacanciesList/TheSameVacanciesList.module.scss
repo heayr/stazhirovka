@@ -1,0 +1,19 @@
+@import "../../assets/const.scss";
+
+.container {
+  padding: 180px 80px 110px;
+  background-color: $primary-bg-color;
+}
+
+.vanancy_list {
+  width: 100%;
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px 40px;
+  @media only screen and (max-width: $breakpoint-desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+}

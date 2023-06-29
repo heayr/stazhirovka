@@ -1,0 +1,40 @@
+@import "../../assets/const.scss";
+
+.container_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.container_btn_first {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.form_container {
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 15%;
+  color: $base-font-color;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: $secondary-bg-color;
+}
+
+.step {
+  width: 100%;
+  font-size: $step-font-size;
+  font-weight: $stepper-font-weight;
+  text-align: center;
+  margin: $step-margin;
+  line-height: $step-line-height;
+  letter-spacing: 0em;
+  color: $lite_grey-font-color;
+}
+
+

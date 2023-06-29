@@ -1,0 +1,23 @@
+@import "@/assets/const.scss";
+
+.form_subtitle {
+  margin: $form_subtitle-margin;
+  text-align: left;
+  color: $base-font-color;
+}
+
+.sublabel_select {
+  margin: $form_sublable_select-margin;
+  text-align: start;
+  color: $dark-grey-font;
+}
+
+.select_subtitle {
+  font-size: $select-subtitle-font-size;
+  font-weight: $select-subtitle-font-wight;
+  line-height: $select-subtitle-line-height;
+  letter-spacing: $select-subtitle-letter-spacing;
+  text-align: left;
+  color: $lite_grey-font-color;
+  margin: $select-subtitle-margin;
+}

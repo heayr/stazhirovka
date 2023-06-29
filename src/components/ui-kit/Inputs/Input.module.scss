@@ -1,0 +1,44 @@
+@import "@/assets/const.scss";
+
+%input {
+  font-size: $input-font-size;
+  width: 100%;
+  height: $input-height;
+  line-height: $input-line-height;
+  outline: none;
+  border: transparent;
+  border-radius: $input-border-radius;
+  border-bottom: $input-border;
+  background-color: $input-background-color;
+  transition: 0.5s linear;
+  padding: 10px 28px;
+  &:hover {
+    cursor: text;
+  }
+  &:focus {
+    border: 1px solid $input-border-color;
+  }
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $input-background-color inset;
+  }
+}
+
+.input {
+  @extend %input;
+}
+
+.input_error {
+  @extend %input;
+  border: $border-error;
+}
+
+.checkbox {
+  height: $checkbox-height;
+  width: $checkbox-width;
+  border: $checkbox-border;
+  box-sizing: border-box;
+  margin-right: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: $checkbox-opacity;
+}

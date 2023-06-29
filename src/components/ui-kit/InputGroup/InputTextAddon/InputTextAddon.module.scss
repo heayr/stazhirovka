@@ -1,0 +1,18 @@
+@import "@/assets/const.scss";
+
+.form_subtitle {
+  margin: $form_subtitle-margin;
+  text-align: left;
+  color: $base-font-color;
+}
+
+.form_subtitle_resp {
+  text-align: left;
+  color: $lite_grey-font-color;
+}
+
+.sublabel {
+  margin: $form_sublable-margin;
+  text-align: start;
+  color: $dark-grey-font;
+}

@@ -1,0 +1,36 @@
+@import "../../../assets/const.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal_content {
+  width: 90vw;
+  max-height: 90vh;
+  max-width: 776px;
+  //max-height: 658px;
+  padding: 35px 40px 22px;
+  background: white;
+  overflow: auto;
+  animation: showScale 1s;
+  @media only screen and (max-width: $breakpoint-mobile) {
+    padding: 24px 16px 42px;
+  }
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn ;
+}

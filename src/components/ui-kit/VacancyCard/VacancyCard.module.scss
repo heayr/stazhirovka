@@ -1,0 +1,86 @@
+@import "@/assets/const.scss";
+
+.container {
+  padding: 40px;
+  min-height: 400px;
+  background-color: $secondary-bg-color;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 860px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.card_right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  //padding: 45px 106px;
+  justify-content: space-between;
+  row-gap: 68px;
+  .main_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 59px;
+    .tags {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      column-gap: 24px;
+      .tag {
+        border-radius: 6px;
+        padding: 4px 8px;
+        margin: 0;
+        background-color: $primary-bg-color;
+        @media only screen and (max-width: $breakpoint-mobile) {
+          padding: 10px 20px;
+        }
+      }
+      .tag:first-child {
+        background-color: $accent-bg-color;
+      }
+      @media only screen and (max-width: $breakpoint-mobile) {
+        flex-wrap: wrap;
+        row-gap: 8px;
+      }
+    }
+    .title {
+      text-align: left;
+      margin-top: 64px;
+      @media only screen and (max-width: $breakpoint-desktop) {
+        margin-top: 50px;
+      }
+      @media only screen and (max-width: $breakpoint-notebook) {
+        margin-top: 20px;
+      }
+    }
+    .salaries {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      .salary {
+        margin-right: 5px;
+        text-align: left;
+        color: $accient-font-color;
+      }
+      @media only screen and (max-width: $breakpoint-mobile) {
+        flex-wrap: wrap;
+      }
+    }
+    @media only screen and (max-width: $breakpoint-desktop) {
+      row-gap: 30px;
+    }
+    @media only screen and (max-width: $breakpoint-mobile) {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: $breakpoint-desktop) {
+    padding: 50px;
+  }
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding: 30px;
+  }
+  @media only screen and (max-width: $breakpoint-mobile) {
+    align-items: center;
+  }
+}
